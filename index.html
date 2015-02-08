@@ -1,20 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME (brief name of host site)
-address: FIXME (street address of home location)
-country: FIXME (country (hyphenated if need be, like 'United-Kingdom')
-language: FIXME (language code like 'en' or 'fr')
-latlng: (fractional latitude and longitude like 41.7901128,-87.6007318)
-humandate: FIXME (use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: FIXME (use the format '9:00 am - 4:30 pm' (without the quotes)
-startdate: FIXME (use YYYY-MM-DD format like 2015-01-01)
-enddate: FIXME (use YYYY-MM-DD format like 2015-01-02)
-instructor: (list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"])
-helper: (list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"])
-contact: FIXME (contact email address for workshop organizer)
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
-eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+venue: DFW Pythoneers-Version Control with Git
+address: 16633 Dallas Parkway, Addison, TX
+country: United-States
+language: en
+latlng: 32.977042, -96.827037
+humandate: Feb 14, 2015
+humantime: 3:00 pm - 4:00 pm
+startdate: 2015-02-14
+enddate: 2015-02-14
+instructor: ["John D. Corless"]
+contact: jdcorless@gmail.com
+etherpad: http://mzl.la/1ziIPHG
 ---
 <!--
   HEADER
@@ -51,14 +49,16 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission is to
+  help scientists and engineers get more research done in less time
+  and with less pain by teaching them basic lab skills for scientific
+  computing.  Software Carpentry workshops cover basic concepts and
+  tools, including program design, version control, data management,
+  and task automation.  
+</p>
+<p>
+  <b> NOTE: </b> <em> This event will only
+  review version control with Git in an accelerated 1 hour format.</em>
 </p>
 
 <!--
@@ -68,8 +68,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   workshop is only open to people from a particular institution.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>Who:</strong> This lecture is aimed at those new to version
+  control and Git in particular.
 </p>
 
 <!--
@@ -97,11 +97,9 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Requirements:</strong> Ideally participants will bring a
+  laptop with a Git install to follow along (see
+  <a href="#setup">below</a>). 
 </p>
 
 <!--
@@ -130,7 +128,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Show the workshop's schedule.  Edit the items and times in the table
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
--->
+  -->
+<!--
 <h2>Schedule</h2>
 
 <div class="row">
@@ -157,6 +156,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </table>
   </div>
 </div>
+
+-->
 
 <!--
   ETHERPAD
@@ -197,8 +198,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2>Syllabus</h2>
 
+<!-- <h2>Syllabus</h2> -->
+
+<!--
 <div class="row">
   <div class="col-md-6">
     <h3>The Unix Shell</h3>
@@ -237,12 +240,12 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
     </ul>
   </div>
-  -->
 </div>
+-->
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Version Control with Git</h3>
+    <h2>Syllabus</h2>
     <ul>
       <li>Creating a repository</li>
       <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
@@ -255,6 +258,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
     </ul>
   </div>
+<!--
   <div class="col-md-6">
     <h3>Managing Data with SQL</h3>
     <ul>
@@ -269,6 +273,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
     </ul>
   </div>
+-->
 </div>
 
 <hr/>
@@ -288,8 +293,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <h2 id="setup">Setup</h2>
 
 <p>
-  <a href="setup/index.html">This page</a> has instructions on testing
-  that you have the right software installed.
+  The only tools we'll need for this session are a text editor and Git.
 </p>
 
 <div> <!-- Start of 'editor' section. -->
@@ -343,66 +347,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   </div>
 </div> <!-- End of 'editor' section. -->
 
-<div> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
-
-  <p>
-    Bash is a commonly-used shell that gives you the power to do simple
-    tasks more quickly.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <p>
-	Install Git for Windows by download and running
-	<a href="http://msysgit.github.io/">the installer</a>.
-	This will provide you with both Git and Bash in the Git Bash program.
-      </p>
-      <h4>Software Carpentry Installer</h4>
-      <p><em>This installer requires an active internet connection.</em></p>
-      <p>After installing Python and Git Bash:</p>
-      <ul>
-	<li>
-          Download the <a href="{{site.swc_installer}}">installer</a>.
-	</li>
-	<li>
-          If the file opens directly in the browser
-          select <strong>File&rarr;Save Page As</strong> to download it
-          to your computer.
-	</li>
-	<li>
-          Double click on the file to run it.
-	</li>
-      </ul>
-      <p>
-	Information about the SWC Windows Installer,
-	including the source code, can be found at
-	<a href="https://github.com/swcarpentry/windows-installer">https://github.com/swcarpentry/windows-installer</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <p>
-	The default shell in all versions of Mac OS X is bash, so no
-	need to install anything.  You access bash from the Terminal
-	(found in
-	<code>/Applications/Utilities</code>).  You may want to keep
-	Terminal in your dock for this workshop.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	The default shell is usually <code>bash</code>, but if your
-	machine is set up differently you can run it by opening a
-	terminal and typing <code>bash</code>.  There is no need to
-	install anything.
-      </p>
-    </div>
-  </div>
-<div> <!-- End of 'shell' section. -->
-
 <div> <!-- Start of 'Git' section. -->
   <h3>Git</h3>
 
@@ -417,8 +361,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4>Windows</h4>
       <p>
-	Git should be installed on your computer as part of your Bash
-	install (described above).
+	Install Git for Windows by downloading and running
+	<a href="http://msysgit.github.io/">the installer</a>.
+	This will provide you with both Git and Bash in the Git Bash program.
+
       </p>
     </div>
     <div class="col-md-4">
@@ -447,160 +393,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
-
-<div> <!-- Start of 'Python' section. -->
-  <h3>Python</h3>
-
-  <p>
-    <a href="http://python.org">Python</a> is a popular language for
-    scientific computing, and great for general-purpose programming as
-    well.  Installing all of its scientific packages individually can be
-    a bit difficult, so we recommend an all-in-one installer.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <ul>
-	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Use all of the defaults for installation
-          <em>except</em> make sure to check <strong>Make Anaconda the
-            default Python</strong>.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <ul>
-	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Use all of the defaults for installation
-          <em>except</em>
-          make sure to check <strong>Make Anaconda the default Python</strong>.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	We recommend the all-in-one scientific Python installer
-	<a href="http://continuum.io/downloads.html">Anaconda</a>.
-	(Installation requires using the shell and if you aren't
-	comfortable doing the installation yourself just
-	download the installer and we'll help you at the boot
-	camp.)
-      </p>
-      <ol>
-	<li>
-          Download the installer that matches your operating
-          system and save it in your home folder.
-	</li>
-	<li>
-          Open a terminal window.
-	</li>
-	<li>
-          Type <pre>bash Anaconda-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear.
-	</li>
-	<li>
-          Press enter. You will follow the text-only prompts.  When
-          there is a colon at the bottom of the screen press the down
-          arrow to move down through the text. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-	</li>
-      </ol>
-    </div>
-  </div>
-</div> <!-- End of 'Python' section. -->
-
-<div> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	You can download the binary files for your distribution
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-	you can use your package manager (e.g. for Debian/Ubuntu
-	run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <p>
-	Download the <a href="{{site.swc_files}}/sqlite3.exe">sqlite3
-	  program</a> and put it in the directory where you are running
-	examples.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
